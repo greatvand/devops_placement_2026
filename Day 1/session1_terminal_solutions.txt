@@ -1,0 +1,62 @@
+DEVOPS PLACEMENT SERIES - SESSION 1 TERMINAL EXERCISES - SOLUTIONS
+========================================================================
+
+TASK 1: Directory Setup
+    mkdir -p project/src project/docs project/logs
+
+TASK 2: File Creation
+    touch project/src/app.py project/src/utils.py project/src/config.py
+
+TASK 3: Navigation
+    cd project/docs
+
+TASK 4: Permissions - Read the Current State
+    cd project/src
+    ls -lh
+
+TASK 5: Permissions - Modify
+    chmod 750 app.py
+    ls -l app.py
+    (rwxr-x--- => owner: rwx, group: r-x, others: none)
+
+TASK 6: Permissions - Numeric Practice
+    chmod 644 utils.py
+    chmod 600 config.py
+    ls -l utils.py config.py
+
+TASK 7: File Content
+    echo 'print("Hello DevOps")' >> app.py
+    cat app.py
+
+TASK 8: Editors - vi
+    vi utils.py
+    (press i to enter insert mode)
+    # utility functions
+    (press Esc, then type :wq and press Enter)
+
+TASK 9: Editors - nano
+    nano config.py
+    DEBUG = True
+    (press Ctrl+O to save, Enter to confirm, Ctrl+X to exit)
+
+TASK 10: Search - find by name
+    find project/ -name "*.py"
+
+TASK 11: Search - find by time
+    find project/ -mtime -1
+
+TASK 12: Copy and Move
+    cp project/src/app.py project/logs/app_backup.py
+
+TASK 13: Cleanup
+    mv project/src/config.py project/docs/config.py
+    ls project/src/      (should NOT show config.py)
+    ls project/docs/     (should show config.py)
+
+TASK 14: Recursive Copy
+    cp -r project/ project_backup/
+
+TASK 15: Final Check
+    ls -lhR project_backup/
+
+END OF SOLUTIONS

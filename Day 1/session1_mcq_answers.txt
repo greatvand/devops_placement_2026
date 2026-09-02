@@ -1,0 +1,31 @@
+DEVOPS PLACEMENT SERIES - SESSION 1 MCQ QUIZ (LINUX) - ANSWER KEY
+========================================================================
+
+1. a) pwd
+2. b) ls -a
+3. c) Moves one directory up
+4. b) touch
+5. b) mkdir
+6. b) Copies recursively including subdirectories
+7. a) mv
+8. b) Forcefully and recursively removes files/directories
+9. b) ~
+10. c) Home directory of the current user
+11. b) more / less
+12. b) Combines file1 and file2 content and overwrites file3
+13. b) find
+14. b) Finds all files ending with .txt in current directory and subdirectories
+15. b) file
+16. b) File type
+17. b) Owner: read/write/execute, Group: read/execute, Others: read/execute
+18. b) chown
+19. c) Read
+20. b) chgrp
+21. b) vi
+22. b) i
+23. b) Saves and quits
+24. b) Ctrl + O
+25. b) tail
+
+========================================================================
+END OF ANSWER KEY

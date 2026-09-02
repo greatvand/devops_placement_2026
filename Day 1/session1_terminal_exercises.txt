@@ -1,0 +1,73 @@
+DEVOPS PLACEMENT SERIES - SESSION 1 TERMINAL EXERCISES (30 MIN)
+Topics: Navigation, File Operations, Permissions, Search, Editors
+========================================================================
+
+TASK 1: Directory Setup
+Create the following directory structure in one go (using a single command
+where possible):
+    project/
+        src/
+        docs/
+        logs/
+
+TASK 2: File Creation
+Inside project/src, create three empty files: app.py, utils.py, config.py
+
+TASK 3: Navigation
+From your home directory, move into project/docs without using more than
+one `cd` command.
+
+TASK 4: Permissions - Read the Current State
+Navigate to project/src and list the files along with their permissions,
+owner, and size in a human-readable format.
+
+TASK 5: Permissions - Modify
+Set permissions on app.py so that:
+  - Owner can read, write, and execute
+  - Group can read and execute
+  - Others have no permissions
+Verify the change.
+
+TASK 6: Permissions - Numeric Practice
+Set utils.py permissions to 644 and config.py permissions to 600.
+Verify both.
+
+TASK 7: File Content
+Add the following line to app.py using the terminal (not an editor):
+    print("Hello DevOps")
+Then display the content of app.py to confirm.
+
+TASK 8: Editors - vi
+Open utils.py using vi. Enter insert mode, add the line:
+    # utility functions
+Save and exit.
+
+TASK 9: Editors - nano
+Open config.py using nano. Add the line:
+    DEBUG = True
+Save and exit.
+
+TASK 10: Search - find by name
+From the project/ directory, find all .py files inside the entire
+project structure.
+
+TASK 11: Search - find by time
+Find all files inside project/ that were modified in the last 1 day.
+
+TASK 12: Copy and Move
+Copy app.py into the logs/ directory and rename the copy to app_backup.py.
+
+TASK 13: Cleanup
+Move config.py from src/ to docs/. Then verify it no longer exists in
+src/ and exists in docs/.
+
+TASK 14: Recursive Copy
+Copy the entire project/ directory to a new directory called
+project_backup/ (including all subdirectories and files).
+
+TASK 15: Final Check
+List the full directory structure of project_backup/ to confirm everything
+was copied correctly, along with permissions of all files.
+
+========================================================================
+END OF EXERCISES

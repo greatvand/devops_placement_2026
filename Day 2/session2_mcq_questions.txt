@@ -1,0 +1,156 @@
+DEVOPS PLACEMENT SERIES - SESSION 2 MCQ QUIZ (LINUX)
+Topics: Text Processing, Redirection & Piping, Process Management
+========================================================================
+
+1. Which command is used to search for a pattern within files?
+   a) find
+   b) grep
+   c) awk
+   d) locate
+
+2. What does `grep -i "error" file.txt` do?
+   a) Searches case-sensitively
+   b) Searches case-insensitively
+   c) Inverts the match
+   d) Counts matching lines
+
+3. What does `grep -v "error" file.txt` do?
+   a) Shows only lines containing "error"
+   b) Shows only lines NOT containing "error"
+   c) Counts occurrences of "error"
+   d) Highlights "error" in the output
+
+4. Which command is best suited for column/field-based text extraction?
+   a) sed
+   b) awk
+   c) grep
+   d) cat
+
+5. What does `sed 's/cat/dog/' file.txt` do (without -i)?
+   a) Replaces all "cat" with "dog" in the file permanently
+   b) Prints the file with the first "cat" per line replaced with "dog", without modifying the file
+   c) Deletes lines containing "cat"
+   d) Appends "dog" after every "cat"
+
+6. In `sed 's/foo/bar/g'`, what does the `g` flag do?
+   a) Makes the match case-insensitive
+   b) Replaces only the first match per line
+   c) Replaces all matches on each line
+   d) Deletes matched text globally
+
+7. What does `awk '{print $2}' file.txt` print?
+   a) The second line of the file
+   b) The second field of every line
+   c) The second word only once
+   d) The second character of each line
+
+8. What is the default field separator in awk?
+   a) Comma
+   b) Tab
+   c) Whitespace
+   d) Semicolon
+
+9. What does the `>` operator do in the shell?
+   a) Appends output to a file
+   b) Redirects output to a file, overwriting it
+   c) Pipes output to another command
+   d) Compares two files
+
+10. What does the `>>` operator do?
+    a) Overwrites a file with new content
+    b) Appends output to the end of a file
+    c) Redirects input from a file
+    d) Redirects error output
+
+11. Which file descriptor number represents standard error (stderr)?
+    a) 0
+    b) 1
+    c) 2
+    d) 3
+
+12. What does `command 2> error.log` do?
+    a) Redirects stdout to error.log
+    b) Redirects stderr to error.log
+    c) Redirects both stdout and stderr to error.log
+    d) Appends stdout to error.log
+
+13. What does the `|` (pipe) symbol do?
+    a) Redirects output to a file
+    b) Sends the output of one command as input to another
+    c) Runs two commands simultaneously in parallel
+    d) Combines two files into one
+
+14. Which command shows a snapshot of currently running processes?
+    a) top
+    b) ps
+    c) jobs
+    d) kill
+
+15. Which command shows a real-time, continuously updating view of processes?
+    a) ps
+    b) top
+    c) grep
+    d) find
+
+16. What signal does `kill -9 <PID>` send?
+    a) SIGTERM
+    b) SIGSTOP
+    c) SIGKILL
+    d) SIGHUP
+
+17. What is the default signal sent by plain `kill <PID>`?
+    a) SIGKILL
+    b) SIGTERM
+    c) SIGSTOP
+    d) SIGINT
+
+18. Which command terminates all processes matching a given name?
+    a) kill
+    b) killall
+    c) pkill -l
+    d) stop
+
+19. What does pressing `Ctrl+Z` do to a running foreground process?
+    a) Terminates it immediately
+    b) Suspends (stops) it and returns control to the shell
+    c) Sends it to the background while still running
+    d) Restarts the process
+
+20. Which command resumes a stopped job in the background?
+    a) fg
+    b) bg
+    c) jobs
+    d) resume
+
+21. Which command brings a background job back to the foreground?
+    a) bg
+    b) fg
+    c) jobs
+    d) top
+
+22. Which command lists all current jobs in the shell session?
+    a) ps
+    b) jobs
+    c) top
+    d) list
+
+23. What does `command &` do when appended to a command?
+    a) Runs the command in the background immediately
+    b) Suspends the command
+    c) Pipes output to another command
+    d) Redirects errors
+
+24. What does `command > file.txt 2>&1` accomplish?
+    a) Redirects only stdout to file.txt
+    b) Redirects only stderr to file.txt
+    c) Redirects both stdout and stderr to file.txt
+    d) Redirects stdin from file.txt
+
+25. Which command counts the number of lines in a file?
+    a) wc -l
+    b) grep -c
+    c) count
+    d) awk -l
+
+========================================================================
+END OF QUESTIONS

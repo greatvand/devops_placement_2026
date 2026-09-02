@@ -1,0 +1,156 @@
+DEVOPS PLACEMENT SERIES - SESSION 1 MCQ QUIZ (LINUX)
+Topics: Navigation & Basic Commands, File Permissions, Search, Viewing/Editing Files
+========================================================================
+
+1. Which command displays the current working directory?
+   a) pwd
+   b) cwd
+   c) dir
+   d) path
+
+2. Which command is used to list hidden files in a directory?
+   a) ls -h
+   b) ls -a
+   c) ls -l
+   d) ls -x
+
+3. What does the command `cd ..` do?
+   a) Moves to home directory
+   b) Moves to root directory
+   c) Moves one directory up
+   d) Moves to previous directory visited
+
+4. Which command creates a new empty file?
+   a) mkfile
+   b) touch
+   c) newfile
+   d) create
+
+5. Which command is used to create a directory?
+   a) md
+   b) mkdir
+   c) newdir
+   d) dircreate
+
+6. What does `cp -r` do when copying a directory?
+   a) Copies only files, not subdirectories
+   b) Copies recursively including subdirectories
+   c) Renames the directory
+   d) Removes the original directory
+
+7. Which command moves or renames a file?
+   a) mv
+   b) rename
+   c) mvfile
+   d) chmv
+
+8. What does `rm -rf` do?
+   a) Removes a file with confirmation
+   b) Forcefully and recursively removes files/directories
+   c) Renames a file forcefully
+   d) Restores a deleted file
+
+9. Which symbol represents the home directory in Linux?
+   a) *
+   b) ~
+   c) #
+   d) $
+
+10. What is the output of `echo $HOME`?
+    a) Current directory
+    b) Root directory
+    c) Home directory of the current user
+    d) Temporary directory
+
+11. Which command displays file content in a paginated manner?
+    a) cat
+    b) more / less
+    c) type
+    d) show
+
+12. What does the command `cat file1 file2 > file3` do?
+    a) Appends file1 and file2 into file3
+    b) Combines file1 and file2 content and overwrites file3
+    c) Compares file1 and file2
+    d) Deletes file1 and file2
+
+13. Which command is used to search for files by name in a directory tree?
+    a) grep
+    b) find
+    c) search
+    d) locate -f
+
+14. What does `find . -name "*.txt"` do?
+    a) Finds all directories named .txt
+    b) Finds all files ending with .txt in current directory and subdirectories
+    c) Deletes all .txt files
+    d) Lists only hidden .txt files
+
+15. Which command shows file type information?
+    a) type
+    b) file
+    c) info
+    d) stat -t
+
+16. In the permission string `-rwxr-xr--`, what does the first character represent?
+    a) Owner's read permission
+    b) File type
+    c) Group permission
+    d) Number of links
+
+17. What does `chmod 755 file.sh` set the permissions to?
+    a) Owner: read/write, Group: read, Others: read
+    b) Owner: read/write/execute, Group: read/execute, Others: read/execute
+    c) Owner: execute only, Group: none, Others: none
+    d) Owner: read only, Group: write, Others: execute
+
+18. Which command changes the owner of a file?
+    a) chmod
+    b) chown
+    c) chgrp
+    d) chuser
+
+19. What does the permission value `4` represent in numeric (octal) notation?
+    a) Write
+    b) Execute
+    c) Read
+    d) Delete
+
+20. Which command is used to change group ownership of a file?
+    a) chown
+    b) chgrp
+    c) chmod
+    d) group
+
+21. Which editor opens in command mode by default when launched?
+    a) nano
+    b) vi
+    c) gedit
+    d) notepad
+
+22. In vi editor, which key is used to switch to insert mode?
+    a) Esc
+    b) i
+    c) :w
+    d) x
+
+23. In vi editor, what does the command `:wq` do?
+    a) Quits without saving
+    b) Saves and quits
+    c) Opens a new file
+    d) Undoes the last change
+
+24. Which nano shortcut is used to save a file?
+    a) Ctrl + S
+    b) Ctrl + O
+    c) Ctrl + X
+    d) Ctrl + W
+
+25. Which command displays the last 10 lines of a file by default?
+    a) head
+    b) tail
+    c) more
+    d) end
+
+========================================================================
+END OF QUESTIONS

@@ -1,0 +1,36 @@
+DEVOPS PLACEMENT SERIES - SESSION 1 MOCK INTERVIEW ROUND (15 MIN)
+Topics: Navigation, File Operations, Permissions, Search, Editors
+========================================================================
+
+1. "What is the difference between an absolute path and a relative path? Can you give me an example of each?"
+
+2. "If you accidentally ran rm -rf / on a system, what would happen, and why is this command considered so dangerous?"
+
+3. "What is the difference between the cp and mv commands?"
+
+4. "Can you explain the difference between a hard link and a soft link in Linux?"
+
+5. "Look at this permission string: drwxr-xr--. Can you tell me the file type and break down the permissions for the owner, group, and others?"
+
+6. "What's the difference between running chmod 755 and chmod 777 on a file? Why is 777 considered bad practice?"
+
+7. "How is the find command different from the locate command?"
+
+8. "How would you find all files larger than 100MB inside a directory tree?"
+
+9. "What is the difference between the head and tail commands? How would you watch a log file live as it's being updated?"
+
+10. "In Linux navigation, what do the symbols ~, ., and .. each represent?"
+
+11. "Can you explain the difference between command mode and insert mode in vi? Why does vi have separate modes at all?"
+
+12. "If a file doesn't have execute permission, can it still be run as a script? What would you need to do to run it?"
+
+13. "What is the purpose of the shebang line, like #!/bin/bash, at the top of a script?"
+
+14. "How would you make a script executable and then run it?"
+
+15. "Suppose you accidentally created a file with a name starting with a hyphen, like -file.txt. How would you delete it without renaming it first?"
+
+========================================================================
+END OF QUESTIONS

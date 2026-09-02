@@ -1,0 +1,83 @@
+DEVOPS PLACEMENT SERIES - SESSION 2 TERMINAL EXERCISES (30 MIN)
+Topics: Text Processing (grep, sed, awk), Redirection & Piping, Process Management
+========================================================================
+
+TASK 1: Setup
+Create a directory called logs_lab/ and inside it create a file called
+access.log with the following content (use echo/cat, not an editor):
+    192.168.1.10 - GET /home 200
+    192.168.1.15 - GET /login 404
+    192.168.1.10 - POST /login 200
+    192.168.1.22 - GET /home 500
+    192.168.1.15 - GET /profile 200
+    192.168.1.22 - GET /home 404
+
+TASK 2: grep - Basic Search
+Search access.log for all lines containing "404".
+
+TASK 3: grep - Case-Insensitive & Count
+Count how many lines contain the word "GET" (case-insensitive), without
+printing the matching lines themselves.
+
+TASK 4: grep - Inverse Match
+Show all lines in access.log that do NOT contain "200".
+
+TASK 5: awk - Field Extraction
+Print only the IP addresses (1st field) from access.log.
+
+TASK 6: awk - Filtering by Field
+Print only the lines where the status code (last field) is 404.
+
+TASK 7: awk - Counting Unique Values
+Print a list of unique IP addresses that appear in access.log (hint:
+combine awk with sort and uniq).
+
+TASK 8: sed - Substitution
+Use sed to replace all occurrences of "GET" with "FETCH" in access.log
+and display the result WITHOUT modifying the original file.
+
+TASK 9: sed - In-Place Edit
+Make a copy of access.log called access_edited.log, then use sed -i to
+replace all "404" with "NOT_FOUND" directly in access_edited.log.
+Verify the change.
+
+TASK 10: Redirection - Overwrite vs Append
+Run `echo "First line" > output.txt`, then run
+`echo "Second line" > output.txt` again. Check the content. Then run
+`echo "Third line" >> output.txt` and check the content again. Explain
+what you observe.
+
+TASK 11: Redirection - stderr
+Run a command that you know will fail (e.g., `ls /nonexistent_folder`)
+and redirect only its error output to a file called errors.log, while
+letting any normal output still print to the terminal.
+
+TASK 12: Redirection - Combine stdout and stderr
+Run a command that produces both valid output and an error (e.g.,
+`ls access.log /nonexistent_folder`) and redirect BOTH stdout and
+stderr into a single file called combined.log.
+
+TASK 13: Piping
+Use a pipeline to count how many lines in access.log contain "200"
+(combine grep and wc -l).
+
+TASK 14: Piping - Multi-stage
+Use a pipeline to extract all IP addresses from access.log, sort them,
+remove duplicates, and count how many unique IPs there are (combine
+awk, sort, uniq, and wc -l).
+
+TASK 15: Process Management - Background Job
+Start a long-running command in the background (e.g., `sleep 120 &`),
+confirm it's running using `jobs`, then bring it to the foreground
+using `fg`, and suspend it again using Ctrl+Z.
+
+TASK 16: Process Management - Finding and Killing
+Find the process ID (PID) of the sleep command you started, then
+terminate it gracefully using kill, and confirm it's no longer running.
+
+TASK 17: Process Management - ps and top
+List all running processes for your user using `ps aux` (or `ps -ef`),
+then open `top` briefly to observe live CPU/memory usage, and exit top.
+
+========================================================================
+END OF EXERCISES

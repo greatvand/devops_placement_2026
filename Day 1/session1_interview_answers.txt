@@ -1,0 +1,93 @@
+DEVOPS PLACEMENT SERIES - SESSION 1 MOCK INTERVIEW ROUND - MODEL ANSWERS
+========================================================================
+
+1. Absolute vs Relative Path
+   Absolute path starts from root (/) and specifies the full location,
+   e.g., /home/user/project/app.py. Relative path is based on the current
+   directory, e.g., ./app.py or ../docs.
+
+2. rm -rf /
+   This recursively (-r) and forcefully (-f) deletes everything starting
+   from the root directory, effectively wiping the entire filesystem
+   without confirmation. It's dangerous because it's irreversible and
+   requires no confirmation, potentially destroying the OS and all data.
+
+3. cp vs mv
+   cp copies a file/directory, leaving the original in place. mv moves
+   (relocates) a file/directory or renames it, removing it from the
+   original location.
+
+4. Hard Links vs Soft Links
+   A hard link points directly to the same inode as the original file —
+   both share the same data, and the file persists even if the original
+   is deleted. A soft (symbolic) link is a pointer/shortcut to the
+   original file path — if the original is deleted, the symlink breaks.
+
+5. drwxr-xr--
+   File type: d (directory)
+   Owner: rwx (read, write, execute)
+   Group: r-x (read, execute)
+   Others: r-- (read only)
+
+6. chmod 755 vs chmod 777
+   755 = owner: rwx, group: r-x, others: r-x (others can read/execute
+   but not modify). 777 = rwx for everyone, meaning anyone on the system
+   can read, write, and execute — a major security risk since any user
+   could modify or replace the file.
+
+7. find vs locate
+   find searches the filesystem in real-time based on criteria (name,
+   size, time, permissions, etc.) and is always accurate but slower.
+   locate searches a prebuilt index/database, making it faster but
+   potentially outdated if the index hasn't been refreshed (updatedb).
+
+8. Find files larger than 100MB
+   find / -type f -size +100M
+
+9. head vs tail / live viewing
+   head shows the beginning of a file (default 10 lines), tail shows
+   the end (default 10 lines). To view a file live as it updates, use
+   tail -f filename.
+
+10. ~ . .. symbols
+    ~ represents the current user's home directory. . represents the
+    current directory. .. represents the parent directory (one level up).
+
+11. vi command mode vs insert mode
+    Command mode is for navigation and executing commands (delete, copy,
+    save, quit) — this is the default mode on opening a file. Insert
+    mode is for actually typing/editing text content, entered by
+    pressing 'i'. Separate modes prevent accidental text insertion while
+    navigating or issuing commands, which is efficient for
+    keyboard-only, mouse-free editing.
+
+12. File without execute permission
+    No, it cannot be run directly as a script even if it has valid
+    script content. You need to add execute permission using
+    chmod +x filename, or run it explicitly via an interpreter,
+    e.g., bash filename.sh (which doesn't require execute permission).
+
+13. Shebang line (#!/bin/bash)
+    It tells the system which interpreter to use to execute the script.
+    Without it, the system may default to the user's current shell,
+    which could behave unpredictably if the script relies on
+    bash-specific syntax.
+
+14. Make executable and run
+    chmod +x scriptname.sh
+    ./scriptname.sh
+
+15. Deleting a file starting with a hyphen
+    Use: rm -- -file.txt
+    The -- tells rm to treat everything after it as a filename, not a
+    flag. Alternatively: rm ./-file.txt
+
+========================================================================
+NOTES FOR FACILITATOR:
+- These are conceptual/verbal questions meant to simulate an interview
+  panel round — no terminal required.
+- Encourage students to explain reasoning, not just recite the answer.
+- Q2, Q6, Q13, Q15 are good filters for genuine understanding vs rote
+  memorization — probe further if answers sound memorized.
+========================================================================
+END OF ANSWERS
