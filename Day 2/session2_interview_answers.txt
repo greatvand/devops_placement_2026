@@ -1,0 +1,102 @@
+DEVOPS PLACEMENT SERIES - SESSION 2 MOCK INTERVIEW ROUND - MODEL ANSWERS
+========================================================================
+
+1. grep vs egrep
+   grep supports basic regular expressions (BRE) by default, requiring
+   backslashes to use special characters like +, ?, | as metacharacters.
+   egrep (or grep -E) supports extended regular expressions (ERE), where
+   these characters work as metacharacters without escaping — useful for
+   patterns like matching "cat|dog" directly.
+
+2. Recursive case-insensitive search
+   grep -ril "ERROR" /path/to/directory
+   (-r recursive, -i case-insensitive, -l lists matching filenames only;
+   drop -l to see matching lines too)
+
+3. sed vs awk
+   sed is a stream editor best suited for line-based find/replace,
+   deletion, or simple text transformations, e.g., substituting text.
+   awk is a pattern-scanning and processing language best suited for
+   column/field-based data extraction and reporting, e.g., printing
+   specific columns from structured text or summing values.
+
+4. sed replace in-place
+   sed -i 's/foo/bar/g' file.txt
+   (-i edits the file in place, s/// is the substitute command, g means
+   replace all occurrences on each line, not just the first)
+
+5. awk '{print $1, $3}' file.txt
+   This prints the 1st and 3rd whitespace-separated fields (columns) of
+   every line in the file.
+
+6. > vs >>
+   > redirects output to a file, overwriting its existing content.
+   >> redirects output to a file, appending to the end without erasing
+   what's already there.
+
+7. 2> redirection
+   2> redirects only stderr (error output, file descriptor 2) to a file,
+   leaving stdout (file descriptor 1) to go to the terminal as usual.
+   Plain > only redirects stdout by default, so error messages would
+   still print to the screen.
+
+8. Piping vs redirection
+   command1 | command2 takes the stdout of command1 and feeds it
+   directly as the stdin of command2, chaining processes together.
+   Redirection connects a command's input/output to a file, not to
+   another command.
+
+9. Redirect stdout and stderr together
+   command > file.txt 2>&1
+   (redirects stdout to file.txt, then makes stderr point to wherever
+   stdout is now pointing — i.e., the same file). Modern shorthand:
+   command &> file.txt
+
+10. Process vs job
+    A process is any running instance of a program, tracked by the OS
+    with a unique PID. A job is a shell-level concept — a process (or
+    pipeline of processes) that was started from that specific shell
+    session and can be referenced with %1, %2, etc., for foreground/
+    background control.
+
+11. ps aux vs ps -ef
+    Both show running processes, but with different formatting/options.
+    ps aux uses BSD-style syntax and shows %CPU, %MEM, and process state
+    for all users. ps -ef uses UNIX-style syntax and shows PPID (parent
+    process ID) clearly, useful for tracing process hierarchy. Output
+    is largely the same information in different columns.
+
+12. Real-time CPU/memory usage
+    top (or htop if installed) shows a live, auto-refreshing view of
+    running processes sorted by resource usage, including CPU%, MEM%,
+    and load averages.
+
+13. kill vs kill -9 vs killall
+    kill sends a termination signal (default SIGTERM, 15) to a process
+    by PID, allowing it to shut down gracefully. kill -9 sends SIGKILL,
+    which forcefully and immediately terminates the process without
+    letting it clean up — used when a process won't respond to SIGTERM.
+    killall terminates all processes matching a given name, rather than
+    requiring a specific PID.
+
+14. Foreground vs background jobs
+    A foreground job occupies the terminal and blocks further input
+    until it finishes. A background job runs without blocking the
+    terminal, letting you continue working. bg resumes a stopped job in
+    the background; fg brings a background/stopped job back to the
+    foreground.
+
+15. Reclaiming terminal from a foreground process
+    Press Ctrl+Z to suspend the process (stops it, returns control to
+    the shell), then type `bg` to resume it running in the background.
+    Use `jobs` to list it and `fg` later to bring it back if needed.
+
+========================================================================
+NOTES FOR FACILITATOR:
+- These are conceptual/verbal questions meant to simulate an interview
+  panel round — no terminal required.
+- Encourage students to explain reasoning, not just recite the answer.
+- Q7, Q9, Q13, Q15 are good filters for genuine understanding vs rote
+  memorization — probe further if answers sound memorized.
+========================================================================
+END OF ANSWERS

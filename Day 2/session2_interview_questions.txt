@@ -1,0 +1,36 @@
+DEVOPS PLACEMENT SERIES - SESSION 2 MOCK INTERVIEW ROUND (15 MIN)
+Topics: Text Processing (grep, sed, awk), Redirection & Piping, Process Management
+========================================================================
+
+1. "What is the difference between grep and egrep? When would you need egrep or grep -E?"
+
+2. "How would you search recursively for the word 'ERROR' inside all files in a directory tree, case-insensitively?"
+
+3. "What is the difference between sed and awk? Give an example of a task better suited to each."
+
+4. "How would you use sed to replace all occurrences of 'foo' with 'bar' in a file, without opening it in an editor?"
+
+5. "Explain what `awk '{print $1, $3}' file.txt` does."
+
+6. "What is the difference between > and >> in shell redirection?"
+
+7. "What does `2>` do, and why is it different from just `>`?"
+
+8. "Explain what `command1 | command2` does. How is piping different from redirection?"
+
+9. "How would you redirect both stdout and stderr to the same file?"
+
+10. "What is the difference between a process and a job in Linux?"
+
+11. "What does the `ps aux` command show you? How is it different from `ps -ef`?"
+
+12. "How would you find the CPU and memory usage of running processes in real time?"
+
+13. "If a process is unresponsive, how would you terminate it? What's the difference between `kill`, `kill -9`, and `killall`?"
+
+14. "What is the difference between running a job in the foreground and background? How do `bg` and `fg` work?"
+
+15. "You started a long-running command in the foreground and now need your terminal back without killing it. What would you do?"
+
+========================================================================
+END OF QUESTIONS

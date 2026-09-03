@@ -1,0 +1,82 @@
+DEVOPS PLACEMENT SERIES - SESSION 2 TERMINAL EXERCISES - SOLUTIONS
+========================================================================
+
+TASK 1: Setup
+    mkdir logs_lab
+    cat > logs_lab/access.log << 'EOF'
+    192.168.1.10 - GET /home 200
+    192.168.1.15 - GET /login 404
+    192.168.1.10 - POST /login 200
+    192.168.1.22 - GET /home 500
+    192.168.1.15 - GET /profile 200
+    192.168.1.22 - GET /home 404
+    EOF
+    cd logs_lab
+
+TASK 2: grep - Basic Search
+    grep "404" access.log
+
+TASK 3: grep - Case-Insensitive & Count
+    grep -ic "get" access.log
+
+TASK 4: grep - Inverse Match
+    grep -v "200" access.log
+
+TASK 5: awk - Field Extraction
+    awk '{print $1}' access.log
+
+TASK 6: awk - Filtering by Field
+    awk '$NF == 404' access.log
+    (NF = number of fields, $NF = value of last field)
+
+TASK 7: awk - Counting Unique Values
+    awk '{print $1}' access.log | sort | uniq
+
+TASK 8: sed - Substitution
+    sed 's/GET/FETCH/g' access.log
+    (original file unchanged since -i was not used)
+
+TASK 9: sed - In-Place Edit
+    cp access.log access_edited.log
+    sed -i 's/404/NOT_FOUND/g' access_edited.log
+    cat access_edited.log
+
+TASK 10: Redirection - Overwrite vs Append
+    echo "First line" > output.txt
+    cat output.txt          # shows: First line
+    echo "Second line" > output.txt
+    cat output.txt          # shows: Second line (First line is gone - overwritten)
+    echo "Third line" >> output.txt
+    cat output.txt          # shows: Second line, then Third line (appended)
+
+TASK 11: Redirection - stderr
+    ls /nonexistent_folder 2> errors.log
+    cat errors.log
+
+TASK 12: Redirection - Combine stdout and stderr
+    ls access.log /nonexistent_folder > combined.log 2>&1
+    cat combined.log
+
+TASK 13: Piping
+    grep "200" access.log | wc -l
+
+TASK 14: Piping - Multi-stage
+    awk '{print $1}' access.log | sort | uniq | wc -l
+
+TASK 15: Process Management - Background Job
+    sleep 120 &
+    jobs
+    fg
+    (press Ctrl+Z to suspend)
+
+TASK 16: Process Management - Finding and Killing
+    ps aux | grep sleep
+    kill <PID>
+    ps aux | grep sleep      (should no longer show the process running)
+
+TASK 17: Process Management - ps and top
+    ps aux
+    top
+    (press 'q' to exit top)
+
+END OF SOLUTIONS

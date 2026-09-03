@@ -1,0 +1,31 @@
+DEVOPS PLACEMENT SERIES - SESSION 2 MCQ QUIZ (LINUX) - ANSWER KEY
+========================================================================
+
+1. b) grep
+2. b) Searches case-insensitively
+3. b) Shows only lines NOT containing "error"
+4. b) awk
+5. b) Prints the file with the first "cat" per line replaced with "dog", without modifying the file
+6. c) Replaces all matches on each line
+7. b) The second field of every line
+8. c) Whitespace
+9. b) Redirects output to a file, overwriting it
+10. b) Appends output to the end of a file
+11. c) 2
+12. b) Redirects stderr to error.log
+13. b) Sends the output of one command as input to another
+14. b) ps
+15. b) top
+16. c) SIGKILL
+17. b) SIGTERM
+18. b) killall
+19. b) Suspends (stops) it and returns control to the shell
+20. b) bg
+21. b) fg
+22. b) jobs
+23. a) Runs the command in the background immediately
+24. c) Redirects both stdout and stderr to file.txt
+25. a) wc -l
+
+========================================================================
+END OF ANSWER KEY
