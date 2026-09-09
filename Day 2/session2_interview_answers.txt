@@ -91,12 +91,4 @@ DEVOPS PLACEMENT SERIES - SESSION 2 MOCK INTERVIEW ROUND - MODEL ANSWERS
     the shell), then type `bg` to resume it running in the background.
     Use `jobs` to list it and `fg` later to bring it back if needed.
 
-========================================================================
-NOTES FOR FACILITATOR:
-- These are conceptual/verbal questions meant to simulate an interview
-  panel round — no terminal required.
-- Encourage students to explain reasoning, not just recite the answer.
-- Q7, Q9, Q13, Q15 are good filters for genuine understanding vs rote
-  memorization — probe further if answers sound memorized.
-========================================================================
 END OF ANSWERS

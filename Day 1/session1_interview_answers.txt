@@ -82,12 +82,4 @@ DEVOPS PLACEMENT SERIES - SESSION 1 MOCK INTERVIEW ROUND - MODEL ANSWERS
     The -- tells rm to treat everything after it as a filename, not a
     flag. Alternatively: rm ./-file.txt
 
-========================================================================
-NOTES FOR FACILITATOR:
-- These are conceptual/verbal questions meant to simulate an interview
-  panel round — no terminal required.
-- Encourage students to explain reasoning, not just recite the answer.
-- Q2, Q6, Q13, Q15 are good filters for genuine understanding vs rote
-  memorization — probe further if answers sound memorized.
-========================================================================
 END OF ANSWERS
