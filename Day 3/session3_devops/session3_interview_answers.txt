@@ -1,0 +1,72 @@
+DEVOPS PLACEMENT SERIES - SESSION 3 MOCK INTERVIEW ROUND - MODEL ANSWERS
+========================================================================
+
+1. Why shell scripts are used in DevOps
+   Shell scripts automate repeated tasks such as log checks, backups,
+   deployments, health checks, file operations, and environment setup.
+   They help reduce manual work and make operations consistent.
+
+2. Purpose of shebang
+   The shebang `#!/bin/bash` tells the operating system to run the script
+   using the Bash interpreter when the script is executed directly.
+
+3. bash script.sh vs ./script.sh
+   `bash script.sh` runs the file using Bash even if it is not executable.
+   `./script.sh` runs it as an executable file, so it needs execute
+   permission and usually a correct shebang line.
+
+4. Variables in Bash
+   A variable is assigned without spaces, for example `NAME="DevOps"`.
+   It is accessed using `$NAME`, for example `echo "$NAME"`.
+
+5. Meaning of $1
+   `$1` is the first command-line argument passed to the script. For
+   example, in `bash greet.sh Ravi`, `$1` contains `Ravi`.
+
+6. Exit code
+   An exit code tells whether the previous command succeeded or failed.
+   `0` usually means success. Any non-zero value usually indicates an
+   error or abnormal result.
+
+7. Checking file existence
+   Use:
+       if [ -f file.txt ]; then
+           echo "File exists"
+       fi
+   `-f` checks for a regular file.
+
+8. -eq vs ==
+   `-eq` is used for numeric equality in test expressions. `==` is used
+   mainly for string comparison in Bash.
+
+9. Use of for loop
+   A for loop is useful when repeating the same action for a known list,
+   such as checking multiple servers, files, users, or directories.
+
+10. Pipeline example
+    `grep "ERROR" app.log | wc -l` searches for error lines and counts
+    them. This is useful in quick log analysis.
+
+11. OSI model
+    The OSI model explains networking in layers, from physical
+    transmission up to application-level protocols. It helps break a
+    network problem into smaller areas.
+
+12. IP addressing and routing layer
+    The Network layer handles logical addressing and routing. IP is the
+    main protocol associated with this layer.
+
+13. TCP vs UDP
+    TCP is reliable and connection-oriented. It ensures delivery and
+    ordering. UDP is faster and connectionless but does not guarantee
+    delivery, ordering, or retransmission.
+
+14. IP address vs port
+    An IP address identifies a device or interface on a network. A port
+    identifies a specific service or process running on that device.
+
+15. Website troubleshooting using layers
+    You can check physical/network connectivity, IP reachability using
+    ping, DNS resolution, TCP port connectivity, TLS/HTTPS, and finally
+    the application response. This avoids guessing and narrows the issue.
+END OF ANSWERS

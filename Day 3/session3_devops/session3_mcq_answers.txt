@@ -1,0 +1,31 @@
+DEVOPS PLACEMENT SERIES - SESSION 3 MCQ QUIZ (LINUX + NETWORKING) - ANSWER KEY
+========================================================================
+
+1. a) #!/bin/bash
+2. b) USERNAME=admin
+3. b) echo $USERNAME
+4. c) Exit status of the last executed command
+5. b) Success
+6. c) if
+7. c) fi
+8. b) -eq
+9. a) -f
+10. c) for
+11. a) chmod u+x script.sh
+12. b) pwd
+13. a) grep -r
+14. b) ls -l
+15. c) Network
+16. a) Application
+17. c) Transport
+18. b) TCP
+19. b) UDP
+20. b) Identify a device/interface on a network
+21. b) Identify the application/service on a host
+22. a) ICMP
+23. c) Data Link
+24. b) ping
+25. b) It helps identify whether an issue is DNS, routing, port, protocol, or application related
+
+========================================================================
+END OF ANSWER KEY

@@ -1,0 +1,36 @@
+DEVOPS PLACEMENT SERIES - SESSION 3 MOCK INTERVIEW ROUND (15 MIN)
+Topics: Shell Scripting Basics, Linux Recap, OSI Model & TCP/IP Basics
+========================================================================
+
+1. "Why do we use shell scripts in DevOps?"
+
+2. "What is the purpose of the shebang line `#!/bin/bash`?"
+
+3. "What is the difference between running a script with `bash script.sh` and `./script.sh`?"
+
+4. "How do you define and use variables in Bash?"
+
+5. "What does `$1` mean in a shell script?"
+
+6. "What is an exit code? What does exit code 0 usually mean?"
+
+7. "How would you check whether a file exists in a Bash script?"
+
+8. "What is the difference between `-eq` and `==` in Bash conditions?"
+
+9. "When would you use a for loop in a shell script?"
+
+10. "Give one example of combining Linux commands with pipes for troubleshooting."
+
+11. "Explain the OSI model in simple terms."
+
+12. "Which OSI layer is responsible for IP addressing and routing?"
+
+13. "What is the difference between TCP and UDP?"
+
+14. "What is the difference between an IP address and a port number?"
+
+15. "A website is not opening. How would OSI/TCP-IP knowledge help you troubleshoot it?"
+
+========================================================================
+END OF QUESTIONS

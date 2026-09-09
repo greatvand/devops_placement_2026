@@ -1,0 +1,119 @@
+DEVOPS PLACEMENT SERIES - SESSION 3 TERMINAL EXERCISES - SOLUTIONS
+========================================================================
+
+TASK 1: Setup
+    mkdir session3_lab
+    cd session3_lab
+
+TASK 2: Create a Simple Script
+    cat > hello.sh << 'EOF'
+    #!/bin/bash
+    echo "Welcome to DevOps Session 3"
+    EOF
+    bash hello.sh
+
+TASK 3: Make Script Executable
+    chmod u+x hello.sh
+    ./hello.sh
+
+TASK 4: Variables
+    cat > user_info.sh << 'EOF'
+    #!/bin/bash
+    NAME="Student"
+    echo "Hello, $NAME"
+    EOF
+    bash user_info.sh
+
+TASK 5: Command-Line Argument
+    cat > greet.sh << 'EOF'
+    #!/bin/bash
+    echo "Hello, $1"
+    EOF
+    bash greet.sh Utkarsh
+
+TASK 6: If Condition
+    cat > check_file.sh << 'EOF'
+    #!/bin/bash
+    if [ -f notes.txt ]; then
+        echo "File found"
+    else
+        echo "File missing"
+    fi
+    EOF
+    bash check_file.sh
+
+TASK 7: Create the Missing File
+    touch notes.txt
+    bash check_file.sh
+
+TASK 8: Exit Code
+    ls notes.txt
+    echo $?
+    ls missing.txt
+    echo $?
+    (0 means success; non-zero means failure)
+
+TASK 9: Numeric Comparison
+    cat > check_number.sh << 'EOF'
+    #!/bin/bash
+    NUM=15
+    if [ "$NUM" -gt 10 ]; then
+        echo "Greater than 10"
+    else
+        echo "10 or less"
+    fi
+    EOF
+    bash check_number.sh
+
+TASK 10: For Loop
+    cat > servers.sh << 'EOF'
+    #!/bin/bash
+    for SERVER in web01 db01 cache01
+    do
+        echo "Checking $SERVER"
+    done
+    EOF
+    bash servers.sh
+
+TASK 11: Linux Recap - Search
+    cat > app.log << 'EOF'
+    INFO application started
+    ERROR database connection failed
+    INFO retrying connection
+    ERROR login service unavailable
+    EOF
+    grep "ERROR" app.log
+
+TASK 12: Linux Recap - Piping
+    grep "ERROR" app.log | wc -l
+
+TASK 13: Linux Recap - Permissions
+    ls -l *.sh
+
+TASK 14: OSI/TCP-IP Mapping
+    cat > osi_notes.txt << 'EOF'
+    Application - HTTP DNS SSH
+    Transport - TCP UDP
+    Network - IP ICMP
+    Data Link - MAC Ethernet
+    EOF
+    grep "TCP" osi_notes.txt
+
+TASK 15: Network Reachability
+    ping -c 4 8.8.8.8
+    OR
+    ping -c 4 localhost
+
+TASK 16: Identify Your IP Information
+    ip addr
+    OR
+    ifconfig
+
+TASK 17: Short Troubleshooting Note
+    cat > troubleshooting_note.txt << 'EOF'
+    If ping fails, check network connectivity, IP route, firewall, and destination availability.
+    If DNS fails, check DNS server, /etc/resolv.conf, and name resolution using nslookup or dig.
+    If a port is blocked, check firewall rules, security groups, service status, and listening ports.
+    EOF
+
+END OF SOLUTIONS

@@ -1,0 +1,84 @@
+DEVOPS PLACEMENT SERIES - SESSION 3 TERMINAL EXERCISES (30 MIN)
+Topics: Shell Scripting Basics, Linux Recap, OSI Model & TCP/IP Basics
+========================================================================
+
+TASK 1: Setup
+Create a directory called session3_lab/ and move inside it.
+
+TASK 2: Create a Simple Script
+Create a file called hello.sh that prints:
+    Welcome to DevOps Session 3
+Run it using bash.
+
+TASK 3: Make Script Executable
+Give execute permission to hello.sh and run it using ./hello.sh.
+
+TASK 4: Variables
+Create a script called user_info.sh that stores your name in a variable and prints:
+    Hello, <your-name>
+
+TASK 5: Command-Line Argument
+Modify/create a script called greet.sh that accepts one argument and prints:
+    Hello, <argument>
+Run it with your name.
+
+TASK 6: If Condition
+Create check_file.sh. It should check whether notes.txt exists.
+If it exists, print "File found"; otherwise print "File missing".
+
+TASK 7: Create the Missing File
+Create notes.txt and run check_file.sh again.
+
+TASK 8: Exit Code
+Run `ls notes.txt`, then print the exit code using `echo $?`.
+Run `ls missing.txt`, then print the exit code again.
+
+TASK 9: Numeric Comparison
+Create check_number.sh. It should store a number in a variable and print
+"Greater than 10" if the number is greater than 10; otherwise print
+"10 or less".
+
+TASK 10: For Loop
+Create a script called servers.sh that loops through:
+    web01 db01 cache01
+and prints:
+    Checking <server-name>
+
+TASK 11: Linux Recap - Search
+Create a file called app.log with these lines:
+    INFO application started
+    ERROR database connection failed
+    INFO retrying connection
+    ERROR login service unavailable
+Use grep to show only ERROR lines.
+
+TASK 12: Linux Recap - Piping
+Count how many ERROR lines are present in app.log using a pipeline.
+
+TASK 13: Linux Recap - Permissions
+Use ls -l to view permissions of all .sh files.
+
+TASK 14: OSI/TCP-IP Mapping
+Create a file called osi_notes.txt with one line each for:
+    Application - HTTP DNS SSH
+    Transport - TCP UDP
+    Network - IP ICMP
+    Data Link - MAC Ethernet
+Use grep to search for TCP.
+
+TASK 15: Network Reachability
+Use ping to test reachability to 8.8.8.8 or localhost.
+Stop the command after a few packets.
+
+TASK 16: Identify Your IP Information
+Run a command to display IP address information on your system.
+Use `ip addr` on Linux if available.
+
+TASK 17: Short Troubleshooting Note
+Create a file called troubleshooting_note.txt and write 3 lines explaining:
+1. What you would check if ping fails
+2. What you would check if DNS fails
+3. What you would check if a port is blocked
+
+========================================================================
+END OF EXERCISES

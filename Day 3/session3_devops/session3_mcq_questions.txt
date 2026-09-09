@@ -1,0 +1,156 @@
+DEVOPS PLACEMENT SERIES - SESSION 3 MCQ QUIZ (LINUX + NETWORKING)
+Topics: Shell Scripting Basics, Linux Recap, OSI Model & TCP/IP Basics
+========================================================================
+
+1. Which line is commonly used at the beginning of a Bash script?
+   a) #!/bin/bash
+   b) /bin/bash!
+   c) start bash
+   d) bash:start
+
+2. How do you define a variable named USERNAME with value admin in Bash?
+   a) USERNAME = admin
+   b) USERNAME=admin
+   c) var USERNAME=admin
+   d) set USERNAME:admin
+
+3. How do you print the value of a variable named USERNAME?
+   a) print USERNAME
+   b) echo $USERNAME
+   c) show USERNAME
+   d) echo USERNAME$
+
+4. What does `$?` store in Bash?
+   a) Current username
+   b) Current directory
+   c) Exit status of the last executed command
+   d) Script filename
+
+5. What does an exit code of 0 usually mean?
+   a) Failure
+   b) Success
+   c) Permission denied
+   d) Command not found
+
+6. Which keyword starts an if condition in Bash?
+   a) check
+   b) condition
+   c) if
+   d) when
+
+7. Which keyword closes an if block in Bash?
+   a) end
+   b) endif
+   c) fi
+   d) close
+
+8. Which operator checks numeric equality in `[ ]` test syntax?
+   a) ==
+   b) -eq
+   c) equals
+   d) =
+
+9. Which option checks whether a file exists?
+   a) -f
+   b) -d
+   c) -x
+   d) -z
+
+10. Which loop is best when you want to repeat over a known list of values?
+    a) if
+    b) case
+    c) for
+    d) exit
+
+11. Which command gives execute permission to script.sh for the owner?
+    a) chmod u+x script.sh
+    b) chown u+x script.sh
+    c) chmod owner script.sh
+    d) run script.sh
+
+12. Which command shows the current working directory?
+    a) ls
+    b) pwd
+    c) cd
+    d) whoami
+
+13. Which command searches recursively for text inside files?
+    a) grep -r
+    b) ls -r
+    c) cd -r
+    d) cat -r
+
+14. Which command lists files with detailed permissions and ownership?
+    a) ls
+    b) ls -l
+    c) pwd -l
+    d) chmod -l
+
+15. Which OSI layer is responsible for routing packets between networks?
+    a) Physical
+    b) Data Link
+    c) Network
+    d) Application
+
+16. Which OSI layer includes protocols like HTTP, DNS, and SSH?
+    a) Application
+    b) Transport
+    c) Network
+    d) Physical
+
+17. Which TCP/IP layer roughly maps to the OSI Transport layer?
+    a) Link
+    b) Internet
+    c) Transport
+    d) Application
+
+18. Which protocol provides reliable, connection-oriented communication?
+    a) UDP
+    b) TCP
+    c) ICMP
+    d) ARP
+
+19. Which protocol is faster but does not guarantee delivery?
+    a) TCP
+    b) UDP
+    c) HTTPS
+    d) SSH
+
+20. What is the main purpose of an IP address?
+    a) Identify a process on a machine
+    b) Identify a device/interface on a network
+    c) Encrypt network traffic
+    d) Store a website name
+
+21. What is the main purpose of a port number?
+    a) Identify the country of the server
+    b) Identify the application/service on a host
+    c) Identify the cable type
+    d) Identify the MAC address
+
+22. Which protocol is commonly used by ping?
+    a) ICMP
+    b) HTTP
+    c) FTP
+    d) DNS
+
+23. Which layer uses MAC addresses?
+    a) Application
+    b) Transport
+    c) Data Link
+    d) Network
+
+24. Which command is commonly used to check network reachability?
+    a) chmod
+    b) ping
+    c) awk
+    d) kill
+
+25. In DevOps troubleshooting, why is OSI/TCP-IP knowledge useful?
+    a) It replaces all Linux commands
+    b) It helps identify whether an issue is DNS, routing, port, protocol, or application related
+    c) It removes the need for monitoring
+    d) It is only useful for network engineers
+
+========================================================================
+END OF QUESTIONS
