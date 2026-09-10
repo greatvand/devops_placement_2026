@@ -1,0 +1,156 @@
+DEVOPS PLACEMENT SERIES - SESSION 4 MCQ QUIZ (NETWORKING)
+Topics: IP Addressing, Subnetting, DNS, DHCP, HTTP/HTTPS/SSH/FTP
+========================================================================
+
+1. What is the main purpose of an IP address?
+   a) Identify a device/interface on a network
+   b) Identify a keyboard
+   c) Encrypt network traffic
+   d) Store passwords
+
+2. Which of the following is a valid IPv4 address?
+   a) 192.168.1.10
+   b) 300.168.1.10
+   c) 192.168.1
+   d) 192.168.1.999
+
+3. How many bits are there in an IPv4 address?
+   a) 8
+   b) 16
+   c) 32
+   d) 128
+
+4. What does CIDR notation `/24` mean?
+   a) 24 host bits
+   b) 24 network bits
+   c) 24 IP addresses only
+   d) Port number 24
+
+5. What is the subnet mask for /24?
+   a) 255.0.0.0
+   b) 255.255.0.0
+   c) 255.255.255.0
+   d) 255.255.255.255
+
+6. In a /24 network, how many total IP addresses are available?
+   a) 64
+   b) 128
+   c) 256
+   d) 512
+
+7. In a typical /24 IPv4 subnet, how many usable host addresses are available?
+   a) 254
+   b) 255
+   c) 256
+   d) 24
+
+8. What is the network address of 192.168.1.25/24?
+   a) 192.168.1.0
+   b) 192.168.1.25
+   c) 192.168.1.255
+   d) 192.168.0.0
+
+9. What is the broadcast address of 192.168.1.25/24?
+   a) 192.168.1.0
+   b) 192.168.1.1
+   c) 192.168.1.255
+   d) 192.168.2.0
+
+10. Which private IP range belongs to Class C private networking?
+    a) 10.0.0.0/8
+    b) 172.16.0.0/12
+    c) 192.168.0.0/16
+    d) 8.8.8.0/24
+
+11. What does DNS mainly do?
+    a) Assigns IP addresses automatically
+    b) Converts domain names to IP addresses
+    c) Encrypts files
+    d) Blocks malware
+
+12. Which DNS record maps a domain name to an IPv4 address?
+    a) A
+    b) AAAA
+    c) MX
+    d) CNAME
+
+13. Which DNS record maps a domain name to an IPv6 address?
+    a) A
+    b) AAAA
+    c) TXT
+    d) NS
+
+14. Which DNS record is used for mail servers?
+    a) MX
+    b) A
+    c) CNAME
+    d) PTR
+
+15. What does DHCP mainly provide?
+    a) Automatic IP configuration
+    b) Website hosting
+    c) File compression
+    d) Password encryption
+
+16. Which protocol is used for secure web browsing?
+    a) HTTP
+    b) HTTPS
+    c) FTP
+    d) Telnet
+
+17. What is the default port for HTTP?
+    a) 21
+    b) 22
+    c) 80
+    d) 443
+
+18. What is the default port for HTTPS?
+    a) 21
+    b) 22
+    c) 80
+    d) 443
+
+19. What is the default port for SSH?
+    a) 21
+    b) 22
+    c) 25
+    d) 53
+
+20. What is the default control port for FTP?
+    a) 20
+    b) 21
+    c) 22
+    d) 443
+
+21. Which protocol is commonly used for secure remote login to Linux servers?
+    a) SSH
+    b) FTP
+    c) HTTP
+    d) DNS
+
+22. Which command can be used to query DNS records?
+    a) nslookup
+    b) chmod
+    c) awk
+    d) kill
+
+23. Which command can test whether a web server responds over HTTP/HTTPS?
+    a) curl
+    b) pwd
+    c) touch
+    d) jobs
+
+24. If DNS is failing, which of the following may still work?
+    a) Accessing by IP address directly
+    b) Accessing by domain name only
+    c) Changing file permissions
+    d) Running chmod
+
+25. Why is subnetting useful?
+    a) It divides a large network into smaller logical networks
+    b) It removes the need for IP addresses
+    c) It converts HTTP to HTTPS
+    d) It replaces DNS
+
+========================================================================
+END OF QUESTIONS

@@ -1,0 +1,31 @@
+DEVOPS PLACEMENT SERIES - SESSION 4 MCQ QUIZ (NETWORKING) - ANSWER KEY
+========================================================================
+
+1. a) Identify a device/interface on a network
+2. a) 192.168.1.10
+3. c) 32
+4. b) 24 network bits
+5. c) 255.255.255.0
+6. c) 256
+7. a) 254
+8. a) 192.168.1.0
+9. c) 192.168.1.255
+10. c) 192.168.0.0/16
+11. b) Converts domain names to IP addresses
+12. a) A
+13. b) AAAA
+14. a) MX
+15. a) Automatic IP configuration
+16. b) HTTPS
+17. c) 80
+18. d) 443
+19. b) 22
+20. b) 21
+21. a) SSH
+22. a) nslookup
+23. a) curl
+24. a) Accessing by IP address directly
+25. a) It divides a large network into smaller logical networks
+
+========================================================================
+END OF ANSWER KEY

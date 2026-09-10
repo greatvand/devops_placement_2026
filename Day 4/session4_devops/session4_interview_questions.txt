@@ -1,0 +1,36 @@
+DEVOPS PLACEMENT SERIES - SESSION 4 MOCK INTERVIEW ROUND (15 MIN)
+Topics: IP Addressing, Subnetting, DNS, DHCP, Common Protocols
+========================================================================
+
+1. "What is an IP address? Why is it needed?"
+
+2. "What is the difference between a public IP and a private IP?"
+
+3. "What is a subnet mask?"
+
+4. "Explain CIDR notation using /24 as an example."
+
+5. "How many usable hosts are available in a /24 subnet, and why?"
+
+6. "What is the difference between network address and broadcast address?"
+
+7. "Why do we use subnetting?"
+
+8. "What is DNS? What problem does it solve?"
+
+9. "What is the difference between an A record and a CNAME record?"
+
+10. "What is DHCP? What details can DHCP provide to a client machine?"
+
+11. "What is the difference between HTTP and HTTPS?"
+
+12. "What is SSH used for in DevOps?"
+
+13. "What is FTP, and why is it less preferred today?"
+
+14. "Which common ports should a DevOps fresher remember?"
+
+15. "A server is reachable by IP but not by domain name. How would you troubleshoot?"
+
+========================================================================
+END OF QUESTIONS

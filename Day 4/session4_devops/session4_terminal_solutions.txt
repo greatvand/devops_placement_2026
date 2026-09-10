@@ -1,0 +1,98 @@
+DEVOPS PLACEMENT SERIES - SESSION 4 TERMINAL EXERCISES - SOLUTIONS
+========================================================================
+
+TASK 1: Setup
+    mkdir session4_lab
+    cd session4_lab
+
+TASK 2: View IP Configuration
+    ip addr
+    OR
+    ifconfig
+    (Look for an IPv4 address like 192.168.x.x, 10.x.x.x, or 172.16-31.x.x)
+
+TASK 3: View Routing Table
+    ip route
+    OR
+    route -n
+    (The default gateway usually appears on a line starting with "default")
+
+TASK 4: Ping Localhost
+    ping -c 4 localhost
+    OR
+    ping -c 4 127.0.0.1
+
+TASK 5: Ping a Public IP
+    ping -c 4 8.8.8.8
+    (If it fails, possible reasons include no internet, firewall blocking ICMP,
+    routing issue, or restricted lab network.)
+
+TASK 6: DNS Lookup
+    nslookup google.com
+    OR
+    dig google.com
+
+TASK 7: DNS vs Direct IP
+    cat > dns_note.txt << 'EOF'
+    If DNS fails, the domain name cannot be converted to an IP address.
+    Direct IP access may still work because it does not require name resolution.
+    This indicates a DNS issue rather than complete network failure.
+    EOF
+
+TASK 8: Create Subnet Notes
+    cat > subnet_notes.txt << 'EOF'
+    IP: 192.168.10.25/24
+    Network: 192.168.10.0
+    Broadcast: 192.168.10.255
+    Usable Range: 192.168.10.1 - 192.168.10.254
+    EOF
+
+TASK 9: Calculate /24 Hosts
+    echo "/24 leaves 8 host bits, so 2^8 = 256 total IPs; minus network and broadcast = 254 usable hosts." >> subnet_notes.txt
+
+TASK 10: Calculate /26 Basics
+    cat >> subnet_notes.txt << 'EOF'
+    /26 subnet mask: 255.255.255.192
+    Total IPs per subnet: 64
+    Usable hosts per subnet: 62
+    EOF
+
+TASK 11: HTTP Test with curl
+    curl -I http://example.com
+    OR
+    curl -I https://example.com
+
+TASK 12: HTTPS Test
+    curl -o /dev/null -s -w "%{http_code}\n" https://example.com
+
+TASK 13: Common Ports File
+    cat > ports.txt << 'EOF'
+    HTTP 80
+    HTTPS 443
+    SSH 22
+    FTP 21
+    DNS 53
+    EOF
+    awk '{print $1}' ports.txt
+
+TASK 14: Search for Secure Protocols
+    grep -E "HTTPS|SSH" ports.txt
+
+TASK 15: Sort Ports Numerically
+    sort -k2 -n ports.txt
+
+TASK 16: Check Listening Ports
+    ss -tuln
+    OR
+    netstat -tuln
+
+TASK 17: Create a Troubleshooting Checklist
+    cat > network_checklist.txt << 'EOF'
+    1. Check IP connectivity using ping.
+    2. Check DNS resolution using nslookup or dig.
+    3. Check route/default gateway using ip route.
+    4. Check port availability using curl, ss, or netstat.
+    5. Check application response and server logs.
+    EOF
+
+END OF SOLUTIONS

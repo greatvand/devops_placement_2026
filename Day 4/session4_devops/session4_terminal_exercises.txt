@@ -1,0 +1,75 @@
+DEVOPS PLACEMENT SERIES - SESSION 4 TERMINAL EXERCISES (30 MIN)
+Topics: IP Addressing, Subnetting, DNS, DHCP, Common Protocols
+========================================================================
+
+TASK 1: Setup
+Create a directory called session4_lab/ and move inside it.
+
+TASK 2: View IP Configuration
+Display your system's IP address information using `ip addr` or `ifconfig`.
+Identify one IPv4 address from the output.
+
+TASK 3: View Routing Table
+Display the routing table using `ip route` or `route -n`.
+Identify the default gateway if available.
+
+TASK 4: Ping Localhost
+Ping localhost for 4 packets and observe the result.
+
+TASK 5: Ping a Public IP
+Ping 8.8.8.8 for 4 packets. If it fails, note possible reasons.
+
+TASK 6: DNS Lookup
+Use nslookup or dig to find the IP address of google.com.
+
+TASK 7: DNS vs Direct IP
+Write a short note in dns_note.txt explaining why a website may fail by
+domain name but still respond by IP address.
+
+TASK 8: Create Subnet Notes
+Create subnet_notes.txt with:
+    IP: 192.168.10.25/24
+    Network: 192.168.10.0
+    Broadcast: 192.168.10.255
+    Usable Range: 192.168.10.1 - 192.168.10.254
+
+TASK 9: Calculate /24 Hosts
+Add one line to subnet_notes.txt explaining why /24 gives 254 usable hosts.
+
+TASK 10: Calculate /26 Basics
+Add these details to subnet_notes.txt:
+    /26 subnet mask: 255.255.255.192
+    Total IPs per subnet: 64
+    Usable hosts per subnet: 62
+
+TASK 11: HTTP Test with curl
+Use curl to fetch response headers from http://example.com or
+https://example.com.
+
+TASK 12: HTTPS Test
+Use curl to show only the HTTP status code from https://example.com.
+
+TASK 13: Common Ports File
+Create ports.txt with the following content:
+    HTTP 80
+    HTTPS 443
+    SSH 22
+    FTP 21
+    DNS 53
+Use awk to print only the protocol names.
+
+TASK 14: Search for Secure Protocols
+Use grep to find HTTPS and SSH entries from ports.txt.
+
+TASK 15: Sort Ports Numerically
+Print ports.txt sorted by port number.
+
+TASK 16: Check Listening Ports
+Use `ss -tuln` or `netstat -tuln` to display listening TCP/UDP ports.
+
+TASK 17: Create a Troubleshooting Checklist
+Create network_checklist.txt with 5 checks for when a website is not opening:
+IP connectivity, DNS, route/gateway, port availability, application response.
+
+========================================================================
+END OF EXERCISES

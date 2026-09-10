@@ -1,0 +1,77 @@
+DEVOPS PLACEMENT SERIES - SESSION 4 MOCK INTERVIEW ROUND - MODEL ANSWERS
+========================================================================
+
+1. IP address
+   An IP address is a logical address assigned to a device or network
+   interface. It is needed so devices can identify and communicate with
+   each other across a network.
+
+2. Public IP vs private IP
+   A public IP is routable on the internet. A private IP is used inside
+   local networks and is not directly routable on the public internet.
+   Common private ranges include 10.0.0.0/8, 172.16.0.0/12, and
+   192.168.0.0/16.
+
+3. Subnet mask
+   A subnet mask separates the network portion and host portion of an IP
+   address. It helps systems decide whether a destination is local or
+   should be sent through a router.
+
+4. CIDR /24
+   CIDR notation shows how many bits are used for the network portion.
+   `/24` means the first 24 bits are network bits, commonly represented
+   as subnet mask 255.255.255.0.
+
+5. Usable hosts in /24
+   A /24 subnet has 8 host bits, so it has 2^8 = 256 total addresses.
+   Usually, one address is reserved for the network address and one for
+   the broadcast address, leaving 254 usable host addresses.
+
+6. Network vs broadcast address
+   The network address identifies the subnet itself, such as
+   192.168.1.0/24. The broadcast address is used to send traffic to all
+   hosts in that subnet, such as 192.168.1.255.
+
+7. Why subnetting is used
+   Subnetting divides a large network into smaller logical networks. It
+   improves organization, security, routing efficiency, and IP address
+   management.
+
+8. DNS
+   DNS converts human-readable names like example.com into IP addresses.
+   Without DNS, users would need to remember IP addresses for services.
+
+9. A record vs CNAME
+   An A record maps a domain name directly to an IPv4 address. A CNAME
+   record maps one domain name to another domain name, acting like an
+   alias.
+
+10. DHCP
+    DHCP automatically gives network configuration to client machines.
+    It can provide IP address, subnet mask, default gateway, DNS server,
+    and lease duration.
+
+11. HTTP vs HTTPS
+    HTTP sends web traffic without encryption. HTTPS uses TLS encryption
+    to protect confidentiality and integrity of web communication.
+
+12. SSH in DevOps
+    SSH is used for secure remote login, server administration, copying
+    files securely, and running commands on remote Linux systems.
+
+13. FTP
+    FTP is used for file transfer, but traditional FTP is not encrypted.
+    It is less preferred today compared with SFTP, SCP, HTTPS-based
+    uploads, or cloud storage because credentials and data may be exposed.
+
+14. Common ports
+    Important ports include HTTP 80, HTTPS 443, SSH 22, FTP 21, DNS 53,
+    SMTP 25, MySQL 3306, PostgreSQL 5432, and Jenkins 8080.
+
+15. Reachable by IP but not domain
+    This usually points to a DNS issue. Check DNS records, local DNS
+    cache, resolver configuration, `/etc/hosts`, authoritative records,
+    and test using nslookup or dig. Also verify that the domain points to
+    the correct IP.
+
+END OF ANSWERS
